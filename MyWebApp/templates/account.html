@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Account</title>
+</head>
+<body>
+    <form action="" method="POST">
+       {% if full_name %}
+            <p>Hello, {{ full_name }}! </p>
+       {% endif %}
+       <p>
+           {% if username %}
+                <span><b>Username:</b> {{ username }}, </span>
+           {% endif %}
+
+           {% if password %}
+           <span><b>Password:</b> {{ password }}</span>
+           {% endif %}
+       </p>
+    </form>
+</body>
+</html>
